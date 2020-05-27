@@ -1,5 +1,6 @@
 .btn,
 .btn2 {
+    
     width: 300px;
     height: 100px;
     font-size: 30px;
@@ -10,6 +11,8 @@
     background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
     background-size: 600%;
     animation: anime 16s linear infinite;
+    position: relative;
+    left:6vw;
 }
 
 .btn2 {
