@@ -1,0 +1,42 @@
+body{
+    margin:1px;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Header */
+div.Header{
+    width:100%;
+    height:10%;
+    overflow: hidden;
+}
+div.Header div.Title{
+        width:50%;
+        height: 100%;
+        text-align: center;
+}
+div.Header div.Title a{
+    color:White;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10vh;
+    position: relative;
+}
+
+/* Content */
+div.Content{
+    width:100%;
+    height:80%;
+    overflow:scroll;
+    overflow-x : hidden;
+}
+
+/* Footer */
+div.Footer{
+    width:100%;
+    height: 10%;
+    text-align: center;
+}
+div.Footer a{
+    font-size: 1vw;
+    color:white;
+}
