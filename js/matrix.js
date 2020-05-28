@@ -28,9 +28,6 @@ function setup() {
     streams.push(stream);
     x += symbolSize
   }
-  streams.forEach(function(stream){
-    console.log(stream);
-  });
   textFont('Consolas');
   textSize(symbolSize);
   resizing = false;

@@ -5,17 +5,45 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="css/index.css" rel="stylesheet" type="text/css">
         <link href="css/buttonAnimated.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" type="text/css">
         <!-- Javascript -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
-        
+        <script type="text/javascript">
+            function AddEventListenerToButton(){
+                document.getElementById('MenuOpen').addEventListener("click", OpenMenu);
+                document.getElementById('MenuClose').addEventListener("click", CloseMenu);
+            };
+            function OpenMenu(){
+                document.getElementById("Menu").style.top = "0%";
+            }
+            function CloseMenu(){
+                document.getElementById("Menu").style.top = "-100%";
+            }
+        </script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="AddEventListenerToButton()">
+        <div class="Menu" id="Menu">
+                <i class="fas fa-window-close" id="MenuClose"></i>
+                <ul>
+                    <li id="Title">Menu</li>
+                    
+                    <li><b><u><a href="/">Home</a></u></b></li>
+                    <li><b><u><a href="/ScrapMechanic/">Scrap Mechanic</a></b></u></li>
+                    <li id="sub"><a href="/ScrapMechanic/RecipeEditor/">Recipe Editor</a></li>
+                    <li id="sub"><a href="/ScrapMechanic/RaidCalculator">Raid Calculator</a></li>
+                    <li><b><u><a href="/Minecraft/">Minecraft</a></b></u></li>
+                    <li id="sub"><a href="/Minecraft/MojangAPI">Mojang API Wrapper</a></li>
+                </ul>
+        </div>
         <div class="Header">
             <div class="Title">
                 <a>JamPaul</a>
+            </div>
+            <div class="MenuButton">
+                <i class="fas fa-bars" id="MenuOpen"></i>
             </div>
         </div>
         <div class="Content">
